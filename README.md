@@ -6,19 +6,19 @@ The system block diagram flows as follows:
 
 Block                       Source Experiment           Key Function
 
-Ramp Generator              Experiment 1                Generates 5kHz triangle wave (1Vpp) for PWM modulation
+Ramp Generator      -        Experiment 1                Generates 5kHz triangle wave (1Vpp) for PWM modulation
 
 
-PWM Modulator               Experiment 2                Single-ended to differential conversion + PWM from audio
-from audio
+PWM Modulator from audio -              Experiment 2                Single-ended to differential conversion + PWM from audio
 
-H-Bridge Driver             Experiment 3                BJT-based H-bridge drives 32Ω speaker at 5V supply
+
+H-Bridge Driver   supply -          Experiment 3                BJT-based H-bridge drives 32Ω speaker at 5V supply
 supply
 
 
-Bandpass Filters            Experiment 4                Two 2nd-order BPFs at 156.25Hz and 625Hz, Q=10
+Bandpass Filters        -    Experiment 4                Two 2nd-order BPFs at 156.25Hz and 625Hz, Q=10
 
 
-Adder                       Experiment 5                Sums BPF outputs before feeding into Class-D amplifier
+Adder               -        Experiment 5                Sums BPF outputs before feeding into Class-D amplifier
 
           
