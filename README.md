@@ -4,21 +4,21 @@ Built and simulated a fully discrete Class-D audio amplifier across 5 experiment
 
 The system block diagram flows as follows:
 
-Block                       Source Experiment           Key Function
+Source Experiment -  Block - Key Function
 
-Ramp Generator      -        Experiment 1                Generates 5kHz triangle wave (1Vpp) for PWM modulation
-
-
-PWM Modulator from audio -              Experiment 2                Single-ended to differential conversion + PWM from audio
+ Experiment 1 - Ramp Generator -  Generates 5kHz triangle wave (1Vpp) for PWM modulation
 
 
-H-Bridge Driver   supply -          Experiment 3                BJT-based H-bridge drives 32Ω speaker at 5V supply
-supply
+ Experiment 2 - PWM Modulator from audio - Single-ended to differential conversion + PWM from audio
 
 
-Bandpass Filters        -    Experiment 4                Two 2nd-order BPFs at 156.25Hz and 625Hz, Q=10
+ Experiment 3 - H-Bridge Driver - BJT-based H-bridge drives 32Ω speaker at 5V supply
 
 
-Adder               -        Experiment 5                Sums BPF outputs before feeding into Class-D amplifier
+
+ Experiment 4 - Bandpass Filters - Two 2nd-order BPFs at 156.25Hz and 625Hz, Q=10
+
+
+ Experiment 5 - Adder - Sums BPF outputs before feeding into Class-D amplifier
 
           
